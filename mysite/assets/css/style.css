@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url("https://use.typekit.net/izp1xbh.css");
+
+* { box-sizing: border-box; }
+
+html, body, ul, li, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: myriad-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway;
+}
+
+h1 {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.hero-image {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/churchill-house-13.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 30em;
+}
+
+.header-container {
+	padding-top: 2em;
+}
+
+nav {
+	float: right;
+}
+
+nav > ul {
+	list-style: none;
+	font-size: 24px;
+	font-family: Raleway;
+}
+
+nav > ul > li {
+	display: inline;
+  	text-align: center;
+  	margin: 0 auto;
+  	padding: 20px;
+  	text-transform: uppercase;
+}
+
+nav > ul > li > a#currentpage {
+	border: 0.2em solid black;
+	border-radius: 0.2em;
+	padding: 0.5em;
+}
+
+.links {
+	text-decoration: none;
+	color: black;
+}
+
+.links:hover {
+	color: blue;
+}
+
+nav > ul > li > ul {
+  background-color: #5ca3ce;
+  position: absolute;
+  display: none; 
+  list-style: none;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+  padding: 5px 20px;
+}
+
+.drop {
+	text-decoration: none;
+	color: white;
+}
+
+.drop:hover {
+	color: darkblue;
+}
+
+main {
+	margin: 0 auto;
+	padding-bottom: 5em;
+}
+
+.text-container {
+	width: 70%;
+}
+
+footer {
+	background-color: grey;
+	margin: 0 auto;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+footer > p {
+	text-align: center;
+}
