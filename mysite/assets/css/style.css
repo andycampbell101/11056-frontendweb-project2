@@ -18,36 +18,67 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Raleway;
 }
 
-h1 {
-	display: inline-block;
-	text-transform: uppercase;
+h1 > a {
+	text-decoration: none;
+	color: black;
 }
 
-.hero-image {
+.hero-image1 {
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/churchill-house-13.jpg");
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	padding: 30em;
+	padding: 20em;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100%;
+}
+
+@media (min-width: 1777px) {
+	.hero-image1 {
+		padding: 15%;
+	}
+}
+
+.hero-text > h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.hero-text > p {
+	font-size: 1em;
+	padding-bottom: 0.5em;
 }
 
 .header-container {
-	padding-top: 2em;
+	padding: 2em;
 }
 
-nav {
+.header-container > h1 {
+	display: inline;
+	text-transform: uppercase;
+}
+
+.main-menu {
 	float: right;
 }
 
-nav > ul {
+.main-menu > ul {
 	list-style: none;
 	font-size: 24px;
 	font-family: Raleway;
 }
 
-nav > ul > li {
+.main-menu > ul > li {
 	display: inline;
   	text-align: center;
   	margin: 0 auto;
@@ -55,10 +86,16 @@ nav > ul > li {
   	text-transform: uppercase;
 }
 
-nav > ul > li > a#currentpage {
+.main-menu > ul > li > a#currentpage {
 	border: 0.2em solid black;
 	border-radius: 0.2em;
 	padding: 0.5em;
+	background-color: black;
+	color: white;
+}
+
+.main-menu > ul > li > a#currentpage:hover {
+	color: blue;
 }
 
 .links {
@@ -70,34 +107,17 @@ nav > ul > li > a#currentpage {
 	color: blue;
 }
 
-nav > ul > li > ul {
-  background-color: #5ca3ce;
-  position: absolute;
-  display: none; 
-  list-style: none;
-}
-
-nav > ul > li:hover > ul {
-  display: block;
-  padding: 5px 20px;
-}
-
-.drop {
-	text-decoration: none;
-	color: white;
-}
-
-.drop:hover {
-	color: darkblue;
-}
-
 main {
 	margin: 0 auto;
 	padding-bottom: 5em;
+	text-align: center;
 }
 
 .text-container {
 	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1.5em;
 }
 
 footer {
@@ -109,4 +129,35 @@ footer {
 
 footer > p {
 	text-align: center;
+	color: white;
+	font-size: 1.5em;
 }
+
+footer > nav {
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+
+footer > nav > ul {
+	list-style: none;
+	font-size: 24px;
+	font-family: Raleway;
+}
+
+footer > nav > ul > li {
+	display: inline;
+  	text-align: center;
+  	margin: 0 auto;
+  	padding: 20px;
+  	text-transform: uppercase;
+}
+
+.footer-links {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-links:hover {
+	color: blue;
+}
+
