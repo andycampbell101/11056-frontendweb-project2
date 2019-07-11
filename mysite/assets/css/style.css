@@ -87,32 +87,6 @@ h1 > a {
   font-size: 100%;
 }
 
-@media (min-width: 1777px) {
-	.hero-image1 {
-		padding: 15%;
-	}
-
-  .hero-image2 {
-    padding: 15%;
-  }
-
-  .hero-image3 {
-    padding: 15%;
-  }
-
-  .hero-image4 {
-    padding: 15%;
-  }
-
-  .hero-image5 {
-    padding: 15%;
-  }
-
-  .hero-image6 {
-    padding: 15%;
-  }
-}
-
 .hero-text > h1 {
 	text-transform: uppercase;
 	font-size: 2em;
@@ -194,6 +168,7 @@ main {
 .text-container > p {
   padding-top: 1em;
   padding-bottom: 1em;
+
 }
 
 .text-container > ul {
@@ -212,6 +187,69 @@ main {
 
 .text-container > h2 {
   text-transform: uppercase;
+}
+
+
+.text-container > .floatleft {
+  max-width: 300px;
+  width: 70%;
+  max-height: 200px;
+  height: 70%;
+  padding: 25px;
+  display: inline-block;
+  float: left;
+}
+.text-container > .floatright {
+  max-width: 300px;
+  width: 70%;
+  max-height: 200px;
+  height: 70%;
+  padding: 25px;
+  display: inline-block;
+  float: right;
+}
+
+.image-container {
+  border-bottom: grey solid;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.image-container > img {
+  display: inline-block;
+  max-width: 400px;
+  width: 70%;
+  max-height: 250px;
+  height: 70%;
+  padding: 25px;
+}
+
+@media (min-width: 1777px) {
+  .hero-image1 {
+    padding: 15%;
+  }
+
+  .hero-image2 {
+    padding: 15%;
+  }
+
+  .hero-image3 {
+    padding: 15%;
+  }
+
+  .hero-image4 {
+    padding: 15%;
+  }
+
+  .hero-image5 {
+    padding: 15%;
+  }
+
+  .hero-image6 {
+    padding: 15%;
+  } 
 }
 
 footer {
