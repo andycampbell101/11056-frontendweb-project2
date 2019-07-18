@@ -3,17 +3,20 @@
 
 * { box-sizing: border-box; }
 
+/* Reset margins */
 html, body, ul, li, p {
 	margin: 0;
 	padding: 0;
 }
 
+/* Set default body font */
 body {
 	font-family: myriad-pro, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
+/* Set default header font */
 h1, h2, h3, h4, h5, h6 {
 	font-family: Raleway;
 }
@@ -23,6 +26,7 @@ h1 > a {
 	color: black;
 }
 
+/* Each hero image, linking to different images for each page */
 .hero-image1 {
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/churchill-house-13.jpg");
 	height: 20em;
@@ -77,6 +81,7 @@ h1 > a {
   position: relative;
 }
 
+/* Designing the hero text to hover over the hero image */
 .hero-text {
   text-align: center;
   position: absolute;
@@ -99,6 +104,7 @@ h1 > a {
 	padding-bottom: 0.5em;
 }
 
+/* Designing the navigation */
 .header-container {
 	padding: 2em;
 }
@@ -147,6 +153,7 @@ h1 > a {
 	color: blue;
 }
 
+/* Styling the main area */
 main {
 	width: 100%;
 	height: 100%;
@@ -189,7 +196,7 @@ main {
   text-transform: uppercase;
 }
 
-
+/* Controlling whether a image in the text container will float left or right */
 .text-container > .floatleft {
   max-width: 300px;
   width: 70%;
@@ -226,6 +233,7 @@ main {
   padding: 25px;
 }
 
+/* Controls the hero image size when on a mobile device */
 @media (min-width: 1777px) {
   .hero-image1 {
     padding: 15%;
@@ -252,6 +260,7 @@ main {
   } 
 }
 
+/* Styling for the footer */
 footer {
 	position: relative;
 	background-color: grey;
